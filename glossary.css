@@ -114,3 +114,21 @@ input[type='submit'] {
   .flower {
     scroll-margin-top: 50px; 
 }
+#NewsSignup {
+	display: none; 
+  }
+  #slogan {
+    cursor: pointer; 
+  }
+  #rose {
+	position: absolute;
+	right: -100px;
+	top: 20px;
+	opacity: 0;
+}
+#rose-div{
+	display:none;
+}
+	#container {
+	position: relative;
+}

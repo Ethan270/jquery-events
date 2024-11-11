@@ -54,4 +54,39 @@ $('.pic').hover(
             }, 500); 
         }
         });
+$('#NewsSignup').hide();
+$('#signupLink').click(function(event){
+    event.preventDefault();
+    $('#NewsSignup').slideToggle();
+    const OpenCloseSpan = $('openclose');
+    if(OpenCloseSpan.text()=== '+'){
+        OpenCloseSpan.text('-');
+    } else {
+        OpenCloseSpan.text('+');
+    }
+})
+
+$('#slogan').hover(
+    function(){
+        $(this).fadeOut('normal', 'linear',function(){
+    $(this).text('The Power of Flowers').fadeIn('slow', 'linear');
+
+        });
+    }
+);
+$('#rose').animate({
+    right:'100px',
+    opacity:1
+
+},2000,'swing');
+
+$('newsSignup').submit(function(event){
+    alert("Thank you for registering");
+    $(this).hide();
+$('signuplink').fadeTo(500, 0.3);
+event.preventDefault();
+});
+
+
+
 });

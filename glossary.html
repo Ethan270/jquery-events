@@ -4,15 +4,16 @@
   <head>
     <meta charset="UTF-8">
     <title>Patti's Bed of Blooms Glossary</title>
-    <meta name="viewport" content="width=device-width; initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="glossary.css" rel="stylesheet">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.1/jquery.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="glossary.js"></script>
-
+   
 	</head>
 
   <body>
     <div id="container">
+      <h2 id="slogan">The Power of Flowers</h2>
       <header>
         <h1>Patti's Bed of Blooms</h1>
       </header>
@@ -177,10 +178,20 @@
           <div class="flower" id="z">zinnia<span class="botanic">:&nbsp;zinnia elegans</span></div>
         </div>
       </div>
+      
+      <div id="newsletter">
+        <p><a href="#" id="signuplink"><span id="openclose">+</span> Sign up for our newsletter</a></p>
+        <form name="newsSignup" method="post" action="thanks.html" id="newsSignup">
+          <label>Name: <input type="text" name="uname"></label>
+          <label>Email address: <input type="email" name="email"></label>
+          <input type="submit" value="Sign Up">
+        </form>
+      </div>
       <footer>
 				<hr>
         <p>Brookhaven College WebDev</p>
       </footer>
+      <img id="rose" src="rose.jpg" alt="Rose">
       <div id="rose" class="imgdiv"><img src="rose.jpg" alt="rose" width="100"></div>
       <div id="mum" class="imgdiv"><img src="yellow_pompom_mum.jpg" alt="mum" width="100"></div>
       <div id="coneflower" class="imgdiv"><img src="coneflower.jpg" alt="coneflower" width="100"></div>
